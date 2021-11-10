@@ -1,0 +1,29 @@
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(42, 45, 50);
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li div {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul.topnav li div:hover:not(.active) {background-color: #111;}
+
+ul.topnav li div.active {background-color: #0aaa6f;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}

@@ -1,0 +1,42 @@
+.modal-user-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-btn-wrap {
+  width: fit-content;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: rgb(255, 104, 104);
+}
+
+.btn-secondary:hover {
+  background-color: rgb(255, 77, 77);
+
+}
+
+.modal {
+  padding-top: 95px;
+}
+
+.add-car-icon {
+  text-align: center;
+  font-size: 24pt;
+  cursor: pointer;
+  background-color: lightgreen;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-top: 5px;
+  
+}
+
+.user-car-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+

@@ -1,0 +1,9 @@
+POST http://localhost:3100/chat/questions
+Content-Type: application/json
+
+{
+    
+        "question":"Do I have to pay for this service?",
+      "answer":"No need to pay on the free plan"
+      
+}

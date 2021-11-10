@@ -1,0 +1,32 @@
+.nav-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--independence);
+}
+
+.nav-user-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  align-items: center;
+}
+
+.logo-wrapper {
+  height: fit-content;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.logo-text {
+  font-size: 22pt;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.logo {
+  height: inherit;
+}

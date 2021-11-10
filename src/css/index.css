@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+
+:root {
+
+  --terra-cotta: #ed6a5aff;
+  --pale-spring-bud: #f4f1bbff;
+  --opal: #9bc1bcff;
+  --independence: #5d576bff;
+  --alabaster: #e6ebe0ff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--independence);
+  font-family: 'Dosis', sans-serif;
+}

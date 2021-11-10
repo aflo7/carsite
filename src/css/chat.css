@@ -1,0 +1,51 @@
+.chat-btn {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: lightgreen;
+  box-shadow: 0 0 10px 0px black;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+
+}
+
+#append-chat-btn {
+  background-color: blue;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  width: 100%;
+  justify-content: right;
+  
+}
+
+.chat-box {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  background-color: white;
+  color: black;
+  bottom: 0;
+  margin-right: 80px;
+  margin-bottom: 40px;
+  height: 400px;
+  width: 250px;
+  padding: 5px;
+}
+
+.question-btn {
+  margin: 5px;
+  padding: 5px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.question-btn:hover {
+  box-shadow: 0 0 10px 0px black;
+
+}

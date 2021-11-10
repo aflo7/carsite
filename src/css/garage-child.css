@@ -1,0 +1,21 @@
+.garage-name {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.garage-child-wrap {
+  padding: 15px;
+}
+
+.cars-in-garage {
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.car-wrap {
+  width: 200px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}

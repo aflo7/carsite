@@ -1,0 +1,100 @@
+.garage-img-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.garage-img {
+  height: 250px;
+  margin: 5px;
+}
+
+.search-price-wrapper {
+  background-color: var(--opal);
+}
+
+.search-price-text {
+  font-weight: bold;
+  font-size: 16pt;
+  padding: 10px;
+  background-color: var(--opal);
+  text-align: center;
+}
+
+.save-cars-wrapper {
+  background-color: var(--terra-cotta);
+  text-align: center;
+}
+.save-cars-txt {
+  font-weight: bold;
+  font-size: 16pt;
+  padding: 10px;
+}
+
+.more-wrapper {
+  background-color: var(--terra-cotta);
+}
+
+.more-text {
+  font-size: 16pt;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.news-home-wrapper {
+  background-color: var(--opal);
+}
+
+.news-text {
+  font-weight: bold;
+  font-size: 16pt;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 770px) {
+  .garage-img-wrapper {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.buy-sell-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.buy-sell-image {
+  margin: 10px;
+  border-radius: 10px;
+  height: 280px;
+}
+
+.car-news-image-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.car-news-img {
+  height: 280px;
+  margin: 10px;
+}
+
+.vin-image {
+  height: 200px;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 15px;
+}
+
+.vin-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
