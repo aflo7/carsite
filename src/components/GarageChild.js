@@ -1,10 +1,16 @@
 import React from "react"
 import "../css/garage-child.css"
+import useGarage from "../hooks/useGarage"
 
-const GarageChild = ({ name, cars }) => {
+const GarageChild = ({ name, cars, deleteGarage, setDeleting }) => {
+  const garageHook = useGarage()
+
   return (
     <div className="garage-child-wrap">
-      <div className="garage-name">{name}</div>
+      <div className="garage-name">
+        <div>{name}</div>
+        <div className="garage-child-del-btn" onClick={() => {setDeleting(true); deleteGarage(name)}}>Delete</div>
+      </div>
 
       <div className="cars-in-garage">
         {cars.map((car, i) => (

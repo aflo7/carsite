@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { db } from "../firebase"
-import { doc, setDoc, getDoc } from "firebase/firestore"
+import { doc, setDoc, getDoc, updateDoc, deleteField } from "firebase/firestore"
 import useAuth from "./useAuth"
 
 const useGarage = () => {
@@ -39,6 +39,17 @@ const useGarage = () => {
       { garages: { [garageName]: cleanArr } },
       { merge: true }
     )
+    
+    retrieveData()
+  }
+
+  const deleteGarage = async (garageName) => {
+
+    const tempArr = userGarageData
+    delete tempArr[garageName]
+
+    const garageRef = doc(db, "users", uid)
+    await setDoc(garageRef, {garages: tempArr})
 
     retrieveData()
   }
@@ -53,7 +64,7 @@ const useGarage = () => {
     retrieveData()
   }, [uid])
 
-  return { uid, createGarage, userData, userGarageData }
+  return { uid, createGarage, userData, userGarageData, deleteGarage }
 }
 
 export default useGarage

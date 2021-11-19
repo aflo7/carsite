@@ -7,18 +7,24 @@
   margin-right: 10px;
   margin-bottom: 10px;
   border: none;
+}
 
+.chat-btn:hover {
+  background-color: rgb(106, 201, 106);
+}
+
+.chat-btn:focus {
+  outline: none;
 }
 
 #append-chat-btn {
-  background-color: blue;
+  /* background-color: blue; */
   position: fixed;
   display: flex;
   flex-direction: row;
   bottom: 0;
   width: 100%;
   justify-content: right;
-  
 }
 
 .chat-box {
@@ -31,7 +37,7 @@
   bottom: 0;
   margin-right: 80px;
   margin-bottom: 40px;
-  height: 400px;
+  height: fit-content;
   width: 250px;
   padding: 5px;
 }
@@ -43,9 +49,27 @@
   color: white;
   cursor: pointer;
   user-select: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .question-btn:hover {
   box-shadow: 0 0 10px 0px black;
+}
 
+.chat-answer {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(68, 201, 108);
+  color: black;
+  cursor: pointer;
+  user-select: none;
+  width: 90%;
 }
