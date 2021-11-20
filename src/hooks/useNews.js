@@ -9,7 +9,7 @@ const reqUrl =
   apiKey
 
 const useNews = () => {
-  const [topic, setTopic] = useState("Car")
+  const [topic] = useState("Car")
   const [articles, setArticles] = useState()
   useEffect(() => {
     axios

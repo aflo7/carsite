@@ -1,22 +1,30 @@
 import React, { useState, useEffect } from "react"
 import "../css/garage.css"
-import useGarage from "../hooks/useGarage"
+import useStore from "../hooks/useStore"
 import ModalComponent from "./ModalComponent"
 import GarageChild from "./GarageChild"
 
 const Garages = () => {
-  const garageHook = useGarage()
+  const useStoreHook = useStore()
   const [deleting, setDeleting] = useState(false)
+  const [garages, setGarages] = useState()
+
+  useEffect(() => {
+    if (!useStoreHook.userData) return
+    if (useStoreHook.userData.garages) {
+      setGarages(useStoreHook.userData.garages)
+    }
+  }, [useStoreHook.userData])
 
   const deleteGarage = async (name) => {
-    await garageHook.deleteGarage(name)
+    await useStoreHook.deleteGarage(name)
 
     setDeleting(false)
   }
 
   const createNew = (e, garageName, carOutput) => {
     e.preventDefault()
-    garageHook.createGarage(garageName, carOutput)
+    useStoreHook.createGarage(garageName, carOutput)
   }
 
   return (
@@ -25,19 +33,18 @@ const Garages = () => {
 
       <div className="garage-tab">
         <div className="garage-wrap">
-          <div className="append-garage"></div>
-
-          {garageHook.userGarageData // create an array of arrays from fetched data
-            ? Object.entries(garageHook.userGarageData).map((item, i) => (
-                <GarageChild
-                  key={i}
-                  name={item[0]}
-                  cars={item[1]}
-                  deleteGarage={deleteGarage}
-                  setDeleting={setDeleting}
-                />
-              ))
-            : null}
+          <div className="append-garage">
+            {garages
+              ? Object.keys(garages).map((item, i) => (
+                  <GarageChild
+                    key={i}
+                    garageName={item}
+                    details={garages[item]}
+                    deleteGarage={deleteGarage}
+                  />
+                ))
+              : null}
+          </div>
 
           <div
             type="button"
