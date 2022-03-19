@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/carsite/static/css/main.9ea8ee2f.chunk.css",
-    "main.js": "/carsite/static/js/main.ac1798a8.chunk.js",
-    "main.js.map": "/carsite/static/js/main.ac1798a8.chunk.js.map",
+    "main.css": "/carsite/static/css/main.4749dd82.chunk.css",
+    "main.js": "/carsite/static/js/main.1f01085f.chunk.js",
+    "main.js.map": "/carsite/static/js/main.1f01085f.chunk.js.map",
     "runtime-main.js": "/carsite/static/js/runtime-main.34765698.js",
     "runtime-main.js.map": "/carsite/static/js/runtime-main.34765698.js.map",
     "static/js/2.d8c880b5.chunk.js": "/carsite/static/js/2.d8c880b5.chunk.js",
     "static/js/2.d8c880b5.chunk.js.map": "/carsite/static/js/2.d8c880b5.chunk.js.map",
     "index.html": "/carsite/index.html",
-    "static/css/main.9ea8ee2f.chunk.css.map": "/carsite/static/css/main.9ea8ee2f.chunk.css.map",
+    "static/css/main.4749dd82.chunk.css.map": "/carsite/static/css/main.4749dd82.chunk.css.map",
     "static/js/2.d8c880b5.chunk.js.LICENSE.txt": "/carsite/static/js/2.d8c880b5.chunk.js.LICENSE.txt",
     "static/media/buy-sell.f095bd40.jpeg": "/carsite/static/media/buy-sell.f095bd40.jpeg",
     "static/media/car-news.7a14a237.png": "/carsite/static/media/car-news.7a14a237.png",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.34765698.js",
     "static/js/2.d8c880b5.chunk.js",
-    "static/css/main.9ea8ee2f.chunk.css",
-    "static/js/main.ac1798a8.chunk.js"
+    "static/css/main.4749dd82.chunk.css",
+    "static/js/main.1f01085f.chunk.js"
   ]
 }
