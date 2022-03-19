@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
 
 :root {
-
   --terra-cotta: #ed6a5aff;
   --pale-spring-bud: #f4f1bbff;
   --opal: #9bc1bcff;
@@ -10,6 +9,19 @@
 }
 
 body {
-  margin: 0;
   background-color: var(--independence);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  margin-bottom: 550px; /* Height of footer*/
 }

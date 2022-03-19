@@ -1,8 +1,6 @@
 import { useState } from "react"
 import useStore from "../hooks/useStore"
 
-
-
 const Settings = ({ darkMode, setDarkMode }) => {
   const useStoreHook = useStore() // database hook
   const [slider, setSlider] = useState(darkMode)
