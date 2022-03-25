@@ -16,13 +16,13 @@ const Footer = () => {
               <h3>Services</h3>
               <ul>
                 <li>
-                  <a href="#">Web design</a>
+                  <button href="#">Web design</button>
                 </li>
                 <li>
-                  <a href="#">Development</a>
+                  <button href="#">Development</button>
                 </li>
                 <li>
-                  <a href="#">Hosting</a>
+                  <button href="#">Hosting</button>
                 </li>
               </ul>
             </div>
@@ -30,13 +30,13 @@ const Footer = () => {
               <h3>About</h3>
               <ul>
                 <li>
-                  <a href="#">Company</a>
+                  <button href="#">Company</button>
                 </li>
                 <li>
-                  <a href="#">Team</a>
+                  <button href="#">Team</button>
                 </li>
                 <li>
-                  <a href="#">Careers</a>
+                  <button href="#">Careers</button>
                 </li>
               </ul>
             </div>
@@ -50,18 +50,19 @@ const Footer = () => {
               </p>
             </div>
             <div className="col item social">
-              <a href="#">
+              <button></button>
+              <button href="#">
                 <i className="icon ion-social-facebook"></i>
-              </a>
-              <a href="#">
+              </button>
+              <button href="#">
                 <i className="icon ion-social-twitter"></i>
-              </a>
-              <a href="#">
+              </button>
+              <button href="#">
                 <i className="icon ion-social-snapchat"></i>
-              </a>
-              <a href="#">
+              </button>
+              <button href="#">
                 <i className="icon ion-social-instagram"></i>
-              </a>
+              </button>
             </div>
           </div>
           <p className="copyright">Company Name © 2018</p>
